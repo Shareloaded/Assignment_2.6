@@ -1,0 +1,78 @@
+1.
+import java.util.Scanner;
+public class Acad
+{
+
+public static void main(String[] args)
+{
+Scanner ob=new Scanner(System.in);
+int a=ob.nextInt();
+int b=ob.nextInt();
+int j=0,k=0;
+int[] odd=new int[100];
+int[] even=new int[100];
+for(int i=a+1;i<b;i++)
+	if(i%2==0)
+	{
+		even[j++]=i;
+	}
+	else 
+	{
+		odd[k++]=i;
+	}
+System.out.println("EVEN");
+for(int i=0;i<j;i++)
+	System.out.print(even[i]+" ");
+System.out.println();
+System.out.println("ODD");
+for(int i=0;i<k;i++)
+	System.out.print(odd[i]+" ");
+
+}
+}
+2.
+import java.util.Scanner;
+public class Acad
+{
+public static void main(String args[])
+{
+int a;
+Scanner s=new Scanner(System.in);
+a=s.nextInt();
+System.out.println();
+for(int i=1;i<11;i++)
+{
+System.out.println(a+"*"+i+"="+(a*i));
+}
+}
+}
+3.
+import java.util.Scanner;
+public class Acad
+{
+	public void sum(int a,int b)
+	{
+		System.out.println("Integer sum is "+(a+b));
+		
+	}
+	public void sum(float a,float b)
+	{
+		System.out.println("Floating point sum is "+(a+b));
+	}
+public static void main(String args[])
+{
+int a,b;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter 2 integers");
+a=s.nextInt();
+b=s.nextInt();
+Acad o=new Acad();
+o.sum(a,b);
+float c,d;
+System.out.println("Enter 2 floating point");
+c=s.nextFloat();
+d=s.nextFloat();
+o.sum(c, d);
+
+}
+}
